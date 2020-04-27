@@ -1,0 +1,41 @@
+.nav{
+  margin-top:5%;
+}
+.nav-item
+{
+    
+  margin-top:1%;
+  padding-left:1%;
+}
+.nav, .nav-link{
+    color: #514D59;
+  font-family: Graphik;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: left;
+
+  i{
+    color: #999DA0;
+    margin-right:10px;
+    }
+}
+.nav-link:hover, .active
+{
+    opacity:1;
+    -webkit-animation: mymove 1s ease-in; /* Safari 4.0 - 8.0 */
+    animation: mymove 1s ease-in infinite;
+    background: #514D59;
+
+
+}
+.active{
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) inset ; opacity: 0.9;
+}
+@-webkit-keyframes mymove {
+  50% {box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2) ; opacity: 0.5;}
+}
+
+@keyframes mymove {
+  50% {box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2) inset; opacity: 0.5;}
+}

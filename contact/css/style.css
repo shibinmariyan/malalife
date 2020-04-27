@@ -1,0 +1,106 @@
+@import "bootstrap.css";
+@font-face
+{
+    font-family: 'Graphik';
+    src: url(assets/fonts/Graphik-Medium.ttf),
+    url(assets/fonts/Graphik-Regular.ttf);
+}
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    margin-top:1%;
+    width:100%;
+    border-bottom: 1px solid #DEE3E7;
+}
+.bodycontainer
+{
+    margin-top:5%;
+    margin-left:20%;
+}
+.text-nav{
+    color:#403366;
+    font-family:"Graphik";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+.storeholder{
+    display: block;
+    margin-left:10px;
+}
+
+.store {
+        background:#191327;
+        margin-left:2%; 
+        border-radius: 4.41px;
+        width: 122.97px;
+        height: 42.25px;
+        display:inline-block;
+    }
+        .store  .store-icon {
+                height: 20px;
+        }
+        .store .store-text {
+            color: #FFFFFF;
+            font-family: Graphik;
+            font-size: 8.83px;
+            vertical-align:text-top;
+            font-weight: 500;
+            line-height: 13px;      
+        }
+.contacthead h3{
+    margin-top:5%;
+    color: #191327;
+    font-family: Graphik;
+    font-size: 2.625rem;
+    font-weight: 500;
+    line-height: 43px;
+    text-align: left;
+}
+.contacthead label{
+    color: #514D59;
+  font-family: Graphik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+form{
+    margin-top:5%;
+}
+form input[type=radio]{
+ color :#1A84FF;
+}
+.letter{
+    color: #514D59;
+    font-family: Graphik;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 676px;
+    text-align: left;
+}
+
+.button{
+    background-color: #ff3366;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: Graphik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+footer{
+    background-color: rgba(233, 235, 241, 0.57);
+    display: block;
+    height: 295px;
+    width:100%;
+    padding-top:5%;
+  }

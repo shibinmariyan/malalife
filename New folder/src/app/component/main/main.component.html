@@ -1,0 +1,38 @@
+<app-header></app-header>
+ <div class="float-left">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="/user"><i class="fa fa-user" aria-hidden="true"></i>Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/guru"><i class="fa fa-user" aria-hidden="true"></i>Gurus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pay2guru"><i class="fa fa-inr" aria-hidden="true"></i>Pay Guru</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-jpy"></i> Income</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-share"></i>Referal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-users"></i> Team</a>
+        </li>
+      </ul>
+    </div>
+<div class="row agrid">
+    <ag-grid-angular 
+    [rowData]="rowData"
+    class="ag-theme-balham"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [enableColResize]="true"
+    [suppressRowClickSelection]="true"
+    [rowSelection]="rowSelection"
+    (gridReady)="onGridReady($event)"
+    [sideBar]="true"
+    >
+  </ag-grid-angular>
+  </div> 
+  

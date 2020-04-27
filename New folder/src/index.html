@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MalalifeAdmin</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!--  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="assets/custom/datepicker.js"></script>
+  <script type="text/javascript">
+    // $(function () {
+
+    //   var start = moment().subtract(29, 'days');
+    //   var end = moment();
+
+    //   function cb(start, end) {
+    //     //starts
+    //     $('#reportrange span').html("Date Joined");
+
+    //     var tdy = new Date();
+    //     var tdy = tdy.getDate() + '-' + (tdy.getMonth() + 1) + '-' + tdy.getFullYear();
+    //     if (start.format("DD-MM-YYYY") == end.format("DD-MM-YYYY")) {
+    //       if (tdy == start.format("DD-MM-YYYY")) {
+
+    //         $("#reportrange span").html("Today");
+    //       }
+    //       else {
+    //         $("#reportrange span").html("Yesterday");
+    //       }
+    //     }//start!= end
+    //     else {
+    //       if ((start.format("DD-MM-YYYY") == moment().subtract(6, 'days').format("DD-MM-YYYY")) &&
+    //         end.format("DD-MM-YYYY") == moment().format("DD-MM-YYYY")) {
+    //         $('#reportrange span').html("Last 7 Days");
+    //       }
+    //       else if ((start.format("DD-MM-YYYY") == moment().subtract(29, 'days').format("DD-MM-YYYY")) &&
+    //         end.format("DD-MM-YYYY") == moment().format("DD-MM-YYYY")) {
+    //         $('#reportrange span').html("Last 30 Days");
+    //       }
+    //       else if ((start.format("DD-MM-YYYY") == moment().startOf('month').format("DD-MM-YYYY")) &&
+    //         end.format("DD-MM-YYYY") == moment().endOf('month').format("DD-MM-YYYY")) {
+    //         $('#reportrange span').html("This Month");
+    //       }
+    //       else if ((start.format("DD-MM-YYYY") == moment().subtract(1, "month").startOf('month').format("DD-MM-YYYY")) &&
+    //         end.format("DD-MM-YYYY") == moment().subtract(1, "month").endOf('month').format("DD-MM-YYYY")) {
+    //         $('#reportrange span').html("Last Month");
+    //       }
+    //       else {
+    //         $('#reportrange span').html(start.format('DD-MMM-YY') + ' - ' + end.format('DD-MMM-YY'));
+    //       }
+    //     }
+    //     // $('#reportrange span').html("Date Joined");
+    //     //ends //$('#reportrange span').html(start.format('DD-MM-YY') + ' - ' + end.format('DD-MM-YY'));
+    //   }
+
+    //   $('#reportrange').daterangepicker({
+    //     startDate: start,
+    //     endDate: end,
+    //     ranges: {
+    //       'Today': [moment(), moment()],
+    //       'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+    //       'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+    //       'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+    //       'This Month': [moment().startOf('month'), moment().endOf('month')],
+    //       'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+    //     }
+    //   }, cb);
+
+    //   cb(start, end);
+
+    // });
+
+
+    var closebtns = document.getElementsByClassName("close");
+    var i;
+
+    for (i = 0; i < closebtns.length; i++) {
+      closebtns[i].addEventListener("click", function () {
+        this.parentElement.style.display = 'none';
+      });
+    }
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    }
+    ////////////////////////////////
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+
+
+    ///////////////////////////////
+  </script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>

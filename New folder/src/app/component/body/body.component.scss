@@ -1,0 +1,23 @@
+.customdefault{
+    height: 100%;
+}
+.float-left
+{
+    width:145px;
+    border: 1px solid #E1E1E1;
+    display: block;
+    height: 100%;
+    background: #FFFFFF;
+}
+.center
+{
+    width: calc(100% - 180px);
+    background: #FFFFFF;
+    margin: 1%;
+
+}
+app-user,app-guru{
+    display: block;
+    height: 100%;
+    padding: 0 15px;
+}

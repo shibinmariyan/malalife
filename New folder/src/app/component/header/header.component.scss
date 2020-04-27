@@ -1,0 +1,119 @@
+.container-fluid{
+    margin-top:1%;
+}
+.logo{
+    max-width:154px;
+    
+    img{
+        width:35%;
+        margin: 2%;
+        margin-top:5%;
+        box-shadow: 0 9px 6px 0 rgba(0, 0, 0, 0.01);
+    }
+    
+}
+.center
+{
+    margin-left:15%;
+    background: none;
+form{
+    color: #514D59;
+    font-family: Graphik;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    display: -webkit-inline-box;
+    max-width:75%;
+    
+    input  {
+        
+    max-width:160px;
+    }
+    ::placeholder{
+        color: #514D59;
+        font-family: Graphik;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        text-align: left;
+    }
+    .filter{
+         font-size:24px;
+    }
+
+      .select{
+          margin-left: 5px;
+    select{
+        margin-left:20px;
+        margin-right:10px;
+        }
+    .date
+        {
+        margin-left:5px;
+        width:179px;
+        font-size:12px;
+        font-family: 'Graphik';
+        // font-weight: 400;
+        }
+    }
+}
+
+}
+.user{
+    max-width: 350px;
+    right:2%;
+    display: inline-block;
+    border:1px solid #ff0;
+    //margin-top:1%;
+    
+    ul{
+        font-size:14px;
+       width: calc(100% - 50px);
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+    li{
+        font-size:12px;
+        }
+
+    }
+    .dropdown{
+    position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left:5%;
+  height:30px;
+  width:30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #FF3366;
+  cursor: pointer;
+
+  border:1px solid #ccc;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        color: #514D59;
+        font-family: Graphik;
+        vertical-align: text-bottom;
+        padding:12px 16px 0 16px;
+      font-weight: 500;
+        width: 120px;
+        margin-top:25%;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+        right:1%;
+        z-index: 10000;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    .dropdown-content:hover{
+        background:#FF3366;
+        color: #fff;
+    }
+}

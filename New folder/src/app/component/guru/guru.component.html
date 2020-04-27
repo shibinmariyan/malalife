@@ -1,0 +1,48 @@
+<app-header></app-header>
+<div class="container-fluid customdefault">
+  <div class="row custom">
+    <div class="float-left">
+      <ul class="nav flex-column ">
+          <li class="nav-item" dropdown>
+              <a class="nav-link" dropdownToggle role="button" (click)="usershow= !usershow">
+                <i class="fa fa-user" aria-hidden="true"></i>User</a>
+              <ul *ngIf="usershow"  class="subnav">
+                <li class="nav-item"><a class="nav-link" href="/user">Overview</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#">Delete</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">InActive</a></li>
+              </ul>
+            </li>
+        <li class="nav-item" dropdown>
+          <a class="nav-link  active" dropdownToggle role="button" 
+          (click)="show = !show">
+            <i class="fa fa-user" aria-hidden="true"></i>Guru</a>
+          <ul class="subnav" *ngIf="show" > 
+            <li class="nav-item active"><a class="nav-link" href="/guru">Overview</a> </li>
+            <li class="nav-item"><a class="nav-link" href="#">Delete</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">InActive</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/pay2guru"><i class="fa fa-inr" aria-hidden="true"></i>Pay Guru</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-jpy"></i> Income</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-share"></i>Referal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa fa-users"></i> Team</a>
+        </li>
+      </ul>
+    </div>
+    <div class="center">
+      <div class="row agrid">
+        <ag-grid-angular class="ag-theme-balham" [rowData]="rowData" [animateRows]="true" [enableColResize]="true"
+          [suppressRowClickSelection]="true" [rowSelection]="rowSelection" id="myGrid" [columnDefs]="columnDefs"
+          [defaultColDef]="defaultColDef" [enableSorting]="true" [enableFilter]="true" (gridReady)="onGridReady($event)">
+        </ag-grid-angular>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+  <form action="/" (submit)="loginuser($event)">
+    <div class="form-group clear-fix imghead">
+      <img src="assets/img/logo.png">
+      <h1>Admin Login</h1>
+      <p *ngIf="reply"><span class="alert alert-danger  fade show" role="alert">{{reply}}</span></p>
+    </div>
+      <div class="form-group">
+          <label for="usr">Username</label>
+          <input type="text" class="form-control"placeholder="What's your username" [(ngModel)]="uname" required
+           [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password</label>
+          <input type="password" class="form-control" placeholder="What's your password" 
+           [ngModelOptions]="{standalone: true}"  [(ngModel)]="password" required>
+        </div>
+        <div class="form-group " id="otp" *ngIf="show">
+          <input type="password" class="form-control" placeholder="What you got"[(ngModel)]="otp"
+            [ngModelOptions]="{standalone: true}">
+       
+        </div> 
+          <input type="password" style="display:none;visibility:hidden;" placeholder="What do you see"
+           [(ngModel)]="bugchecker"  [ngModelOptions]="{standalone: true}">
+        
+        <div class="form-group button">
+           <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        
+    </form>
+</div>
+

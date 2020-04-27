@@ -1,0 +1,71 @@
+form
+{
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  width: 381px;
+  height: auto;
+  margin-top: 8%;
+ font-family: 'Graphik';
+  text-align: center;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:2% 0 5%;
+  .imghead
+  {
+    padding-top:6%;
+    text-align:center;
+    img{
+      max-width:20%;
+      margin-top:5%;
+      vertical-align: middle;
+      border:none;
+    }
+    h1
+    {
+      color: #191327;
+  font-family: Graphik;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top:5%;
+}
+    }
+  }
+  button{
+    width:100%;
+  }
+  button:hover{
+    box-shadow: none;
+    border:1px solid #ccc ;
+    opacity:0.5;
+    width:100%;
+  }
+  .form-group
+{
+  width:80%;
+//   padding: 2px;
+margin:2% auto;
+text-align: left;
+  input[type=text], input[type=password] {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: none;
+    border-top:none;border-left:none;border-right:none;
+    box-sizing: border-box;
+    margin-bottom:inherit;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+   &:focus{
+       border:1px solid #fff;
+       background: #fff;
+   } 
+  }
+  ::placeholder
+  {
+      opacity:0.5;
+  }
+
+  
+}
+

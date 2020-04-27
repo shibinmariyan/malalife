@@ -1,0 +1,122 @@
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'assets/custom/animate.scss';
+@import 'assets/custom/datepicker.scss';
+
+
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+@font-face
+{
+    font-family: 'Graphik';
+    src: url(assets/fonts/Graphik-Medium.ttf),
+    url(assets/fonts/Graphik-Regular.ttf);
+}
+app-header{
+    height:78px;
+    background: #FFFFFF;
+}
+.customdefault{
+    height:calc(100% - 78px);
+    position:absolute;   
+    top:78px;
+}
+app-header, .customdefault{
+    
+    width:100%;
+    border: 1px solid #E1E1E1;
+    display:block;
+}
+body{
+    margin:0;
+    padding: 0;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#EFEEEE;
+}
+*{
+    box-sizing: border-box;
+   font-family: 'Graphik';
+
+}
+
+/////////body.scss
+
+.float-left
+{
+    width:145px;
+    border: 1px solid #E1E1E1;
+    display: block;
+    background: #FFFFFF;
+}
+.center
+{
+    width: calc(100% - 180px);
+    background: #FFFFFF;
+    margin: 1%;
+
+}
+.agrid{
+    display: block;
+    padding: 0 15px;
+}
+
+////left.scss
+.custom
+{
+    height: 100%;
+}
+.nav{
+    margin-top:5%;
+  }
+  .nav-item
+  {
+      
+    margin-top:1%;
+   // padding-left:1%;
+  }
+  .nav, .nav-link{
+      color: #514D59;
+    font-family: Graphik;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+  
+    i{
+      color: #514D59;
+      margin-right:10px;
+      }
+  }
+  .subnav
+  {
+      list-style-type: none;
+  }
+  .nav-link:hover, .active,
+  {
+      opacity:1;
+      -webkit-animation: mymove 1s ease-in; /* Safari 4.0 - 8.0 */
+      animation: mymove 2s ease-in;
+      background:#FF3366;
+      color:#fff;
+      i{
+        color:#fff;
+    }
+  }
+ 
+  .active{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) inset ; opacity: 0.9;
+  }
+
+
+
+
+  @-webkit-keyframes mymove {
+    50% {box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2) ; opacity: 0.5;}
+  }
+  @keyframes mymove {
+    50% {box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2) inset; opacity: 0.5;}
+  }
